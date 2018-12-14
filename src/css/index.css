@@ -1,0 +1,184 @@
+@font-face {
+  font-family: 'Callous';
+  src: local('Callous'), url(../fonts/Callous-demo.ttf) format("truetype");
+}
+body {
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-family: 'Ubuntu Mono', monospace;
+}
+.background {
+  background-image: url('../images/background-min.png');
+  background-size: cover;
+  background-color: black;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+}
+.iframe {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+a {
+  margin: 5px;
+}
+.social {
+  width: 30px;
+  border: none;
+  margin: 0 10px;
+}
+@media screen and (max-width: 480px) {
+  .background {
+    background-size: contain;
+    background-position: center;
+  }
+}
+.menu a {
+  display: inline-block;
+  margin: 0 auto;
+  text-decoration: none;
+  font-size: 40px;
+  color: #ffffff;
+  transition: color 0.3s ease;
+  font-family: 'Ubuntu Mono', monospace;
+}
+.menu a:hover {
+  background: linear-gradient(to left, #fed216, #16f7fe);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#menuToggle {
+  display: block;
+  position: relative;
+  top: 50px;
+  left: 50px;
+  z-index: 1;
+  -webkit-user-select: none;
+  user-select: none;
+  width: 50vw;
+}
+#menuToggle input {
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  cursor: pointer;
+  opacity: 0;
+  /* hide this */
+  z-index: 2;
+  /* and place it over the hamburger */
+  -webkit-touch-callout: none;
+}
+/*
+ * Just a quick hamburger
+ */
+#menuToggle span {
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  background: #ffffff;
+  border-radius: 3px;
+  z-index: 1;
+  transform-origin: 4px 0px;
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+}
+#menuToggle span:first-child {
+  transform-origin: 0% 0%;
+}
+#menuToggle span:nth-last-child(2) {
+  transform-origin: 0% 100%;
+}
+/*
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+#menuToggle input:checked ~ span {
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #ffffff;
+}
+/*
+ * But let's hide the middle one.
+ */
+#menuToggle input:checked ~ span:nth-last-child(3) {
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+/*
+ * Ohyeah and the last one should go the other direction
+ */
+#menuToggle input:checked ~ span:nth-last-child(2) {
+  transform: rotate(-45deg) translate(0, -1px);
+}
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+#menu {
+  box-sizing: border-box;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  padding-top: 125px;
+  background: #161616;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  opacity: 0.7;
+}
+#menu li {
+  padding: 20px 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+/*
+ * And let's slide it in from the left
+ */
+#menuToggle input:checked ~ ul {
+  transform: none;
+}
+.about {
+  width: 40vw;
+  margin-left: 60vw;
+  padding-left: 3.6vw;
+  padding-right: 4vw;
+  margin-top: 38vh;
+  box-sizing: border-box;
+  text-align: justify;
+}
+.about p {
+  font-weight: 100;
+  line-height: 25px;
+  background: linear-gradient(to left, #fed216, #16f7fe);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+h1 {
+  font-size: 220px;
+  font-family: 'Callous';
+  font-weight: 100;
+  margin: 0;
+  padding: 50px 0;
+  background: linear-gradient(to left, #fed216, #16f7fe);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+h2 {
+  font-weight: 100;
+  background: linear-gradient(to left, #fed216, #16f7fe);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}

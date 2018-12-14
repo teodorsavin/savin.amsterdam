@@ -8,6 +8,7 @@ body {
     padding: 0;
     color: white;
     font-family: 'Ubuntu Mono', monospace;
+    background-color: #000000;
 }
 
 .background {
@@ -16,7 +17,7 @@ body {
     background-color: black;
     background-repeat: no-repeat;
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .iframe {
@@ -34,11 +35,9 @@ a {
     margin: 0 10px;
 }
 
-@media screen and (max-width: 480px) {
-    .background {
-        background-size: contain;
-        background-position: center;
-    }
+.github {
+    background-color: #ffffff;
+    border-radius: 8px;
 }
 
 .menu a {
@@ -171,12 +170,14 @@ a {
 
 .about {
     width: 40vw;
+    height: 20vw;
     margin-left: 60vw;
     padding-left: 3.6vw;
     padding-right: 4vw;
     margin-top: 38vh;
     box-sizing: border-box;
     text-align: justify;
+    overflow-y: auto;
 }
 
 .about p {
@@ -205,4 +206,44 @@ h2 {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     display: inline-block;
+}
+
+@media screen and (min-width: 480px) and (max-width: 1280px) {
+    .background {
+        background-size: contain;
+        background-position: center;
+    }
+
+    h1 {
+        font-size: 150px;
+    }
+
+    .about {
+        margin-top: 30vh;
+        height: 20vw;
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    .background {
+        background-size: contain;
+        background-position: top 20vh left 10vw;
+        min-height: 50vh;
+    }
+
+    .about {
+        margin-top: 50vh;
+        margin-left: 0;
+        height: auto;
+        overflow-y: hidden;
+        width: 100vw;
+    }
+
+    h1 {
+        font-size: 100px;
+        text-align: center;
+        display: block;
+        margin: 0 auto;
+    }
 }

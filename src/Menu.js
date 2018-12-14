@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import linkedinLogo from './images/linkedin.svg';
 import instagramLogo from './images/instagram-logo.svg';
+import github from './images/github.svg';
 
 class Menu extends Component {
   render() {
@@ -18,6 +19,7 @@ class Menu extends Component {
                       <li><a href="#">Info</a></li>
                       <li><a href="#">Contact</a></li>
                       <li>
+                          <a href="https://github.com/teodorsavin" target="_blank" rel="noopener noreferrer"><img className="social github" src={github} alt="github" /></a>
                           <a href="https://www.linkedin.com/in/teodorsavin" target="_blank" rel="noopener noreferrer"><img className="social" src={linkedinLogo} alt="linkedin" /></a>
                           <a href="https://www.instagram.com/teodorsavin" target="_blank" rel="noopener noreferrer"><img className="social" src={instagramLogo} alt="instagram" /></a>
                       </li>

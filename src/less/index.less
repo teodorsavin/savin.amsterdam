@@ -43,17 +43,26 @@ a {
 .menu a {
     display: inline-block;
     margin: 0 auto;
-    text-decoration: none;
-    font-size: 40px;
-    color: #ffffff;
-    transition: color 0.3s ease;
-    font-family: 'Ubuntu Mono', monospace;
-}
 
-.menu a:hover {
-    background: linear-gradient(to left, #fed216,#16f7fe);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    background-color: #045de9;
+    background-image: linear-gradient(315deg, #045de9 0%, #09c6f9 74%);
+
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 40px;
+    font-weight: 600;
+    letter-spacing: 7px;
+    text-decoration: none;
+    line-height: 50px;
+
+    transition: color 0.3s ease;
+
+    &:hover {
+        color: white;
+        -webkit-background-clip: none;
+        -webkit-text-fill-color: #ffffff;
+    }
 }
 
 #menuToggle {
@@ -90,7 +99,9 @@ a {
   margin-bottom: 5px;
   position: relative;
   // background: #cdcdcd;
-  background: #ffffff;
+  // background: #ffffff;
+  background-color: #045de9;
+  background-image: linear-gradient(315deg, #045de9 0%, #09c6f9 74%);
   border-radius: 3px;
   z-index: 1;
   transform-origin: 4px 0px;
@@ -114,7 +125,9 @@ a {
 #menuToggle input:checked ~ span {
   opacity: 1;
   transform: rotate(45deg) translate(-2px, -1px);
-  background: #ffffff;
+  // background: #ffffff;
+  background-color: #045de9;
+  background-image: linear-gradient(315deg, #045de9 0%, #09c6f9 74%);
 }
 
 /*
@@ -158,7 +171,7 @@ a {
 #menu li {
   padding: 20px 0;
   text-align: center;
-  text-transform: uppercase;
+  // text-transform: uppercase;
 }
 
 /*
@@ -170,11 +183,11 @@ a {
 
 .about {
     width: 40vw;
-    height: 20vw;
+    height: 40vw;
     margin-left: 60vw;
     padding-left: 3.6vw;
     padding-right: 4vw;
-    margin-top: 38vh;
+    margin-top: 20vh;
     box-sizing: border-box;
     text-align: justify;
     overflow-y: auto;
@@ -183,7 +196,9 @@ a {
 .about p {
     font-weight: 100;
     line-height: 25px;
-    background: linear-gradient(to left, #fed216,#16f7fe);
+    background-color: #045de9;
+    background-image: linear-gradient(315deg, #045de9 0%, #09c6f9 74%);
+    // background: linear-gradient(to left, #fed216,#16f7fe);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -194,18 +209,64 @@ h1 {
     font-weight: 100;
     margin: 0;
     padding: 50px 0;
-    background: linear-gradient(to left, #fed216,#16f7fe);
+    background-color: #045de9;
+    background-image: linear-gradient(315deg, #045de9 0%, #09c6f9 74%);
+    // background: linear-gradient(to left, #fed216,#16f7fe);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     display: inline-block;
 }
 
 h2 {
+    font-size: 40px;
     font-weight: 100;
-    background: linear-gradient(to left, #fed216,#16f7fe);
+    background-color: #045de9;
+    background-image: linear-gradient(315deg, #045de9 0%, #09c6f9 74%);
+    // background: linear-gradient(to left, #fed216,#16f7fe);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     display: inline-block;
+}
+
+.contact {
+    input, textarea {
+        font-size: 15px;
+        padding: 15px 15px;
+        border-radius: 10px;
+        margin: 10px 0px;
+        color: #ffffff;
+        border: none;
+        display: block;
+        width: 500px;
+        outline: none;
+        background-color: #045de9;
+        background-image: linear-gradient(315deg, #045de9 0%, #09c6f9 74%);
+
+        &[type="submit"] {
+            width: 530px;
+            cursor: pointer;
+        }
+
+        &:focus {
+            background-color: #045de9;
+            background-image: none;
+        }
+    }
+
+    textarea {
+        height: 8vh;
+    }
+
+    label {
+        font-weight: 100;
+        font-size: 20px;
+        background-color: #045de9;
+        background-image: linear-gradient(315deg, #045de9 0%, #09c6f9 74%);
+        // background: linear-gradient(to left, #fed216,#16f7fe);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        display: inline-block;
+    }
 }
 
 @media screen and (min-width: 480px) and (max-width: 1280px) {

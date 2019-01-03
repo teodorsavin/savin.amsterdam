@@ -18,7 +18,7 @@ class App extends Component {
               <Route path="/about" component={About} />
               <Route path="/contact" component={Contact} />
               <div className="marquee">
-            	<p>“Experience is simply the name we give our mistakes.” - Oscar Wilde &middot; “Inaction breeds doubt and fear. Action breeds confidence and courage. If you want to conquer fear, do not sit home and think about it. Go out and get busy.” - Dale Carnegie</p>
+            	<p>“The difference between ordinary and extraordinary is that little extra.“ - Jimmy Johnson; “Experience is simply the name we give our mistakes.” - Oscar Wilde &middot; “Inaction breeds doubt and fear. Action breeds confidence and courage. If you want to conquer fear, do not sit home and think about it. Go out and get busy.” - Dale Carnegie</p>
               </div>
             </div>
           </div>

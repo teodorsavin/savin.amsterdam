@@ -154,17 +154,19 @@ a {
 #menuToggle input:checked ~ ul {
   transform: none;
 }
+.home,
 .about {
   width: 40vw;
-  height: 60vh;
+  min-height: 60vh;
   margin-left: 60vw;
   padding-left: 3.6vw;
   padding-right: 4vw;
-  margin-top: 20vh;
+  margin-top: 35vh;
   box-sizing: border-box;
   text-align: justify;
   overflow-y: auto;
 }
+.home p,
 .about p {
   font-weight: 100;
   line-height: 25px;
@@ -257,23 +259,31 @@ h2 {
   .background {
     background-size: contain;
     background-position: center;
+    background-position: top 2vh left;
+    background-size: 100%;
   }
   h1 {
-    font-size: 150px;
+    font-size: 140px;
   }
+  .home,
   .about {
     margin-top: 30vh;
     height: 40vh;
+  }
+  .about {
+    margin-top: 20vh;
   }
 }
 @media screen and (max-width: 480px) {
   .background {
     background-size: contain;
-    background-position: top 20vh left 10vw;
+    background-position: top 10vh left -65vw;
     min-height: 50vh;
+    background-size: 300%;
   }
+  .home,
   .about {
-    margin-top: 50vh;
+    margin-top: 70vh;
     margin-left: 0;
     height: auto;
     overflow-y: hidden;

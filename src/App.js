@@ -19,8 +19,8 @@ class App extends Component {
             	<p>
                     “The difference between ordinary and extraordinary is that little extra.“ - Jimmy Johnson;
                     “Experience is simply the name we give our mistakes.” - Oscar Wilde &middot;
-                    “Inaction breeds doubt and fear. Action breeds confidence and courage. If you want to conquer fear, do not sit home and think about it. Go out and get busy.” - Dale Carnegie
-                    "Why fit in when you were born to stand out?" - Dr. Seuss
+                    “Inaction breeds doubt and fear. Action breeds confidence and courage. If you want to conquer fear, do not sit home and think about it. Go out and get busy.” - Dale Carnegie;
+                    "Why fit in when you were born to stand out?" - Dr. Seuss;
                 </p>
               </div>
             </div>

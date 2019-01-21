@@ -21,6 +21,7 @@ class App extends Component {
                     “Experience is simply the name we give our mistakes.” - Oscar Wilde &middot;
                     “Inaction breeds doubt and fear. Action breeds confidence and courage. If you want to conquer fear, do not sit home and think about it. Go out and get busy.” - Dale Carnegie;
                     "Why fit in when you were born to stand out?" - Dr. Seuss;
+		    "Always make a total effort, even when the odds are against you." - Arnold Palmer;
                 </p>
               </div>
             </div>

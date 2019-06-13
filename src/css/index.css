@@ -8,6 +8,7 @@ body {
   color: white;
   font-family: 'Ubuntu Mono', monospace;
   background-color: #000000;
+  overflow-x: hidden;
 }
 .background {
   background-image: url('../images/background-min.png');
@@ -255,6 +256,55 @@ h2 {
     transform: translate(-100%, 0);
   }
 }
+
+.portfolio {
+  margin-top: 7vh;
+  width: 98%;
+  box-sizing: border-box;
+  text-align: justify;
+}
+
+.portfolio h2 {
+  text-align: center;
+  padding-left: 1vw;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 24%;
+  max-width: 24%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  max-width: 100%;
+  cursor: pointer;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
 @media screen and (min-width: 480px) and (max-width: 1280px) {
   .background {
     background-size: contain;

@@ -30,6 +30,7 @@ class App extends Component {
                     "Everything is possible. The impossible just takes longer." - Dan Brown;
                     "In times of change, learners inherit the earth, while the learned find themselves beautifully equipped to deal with a world that no longer exists." - Eric Hoffer
                     "Our greatest weakness lies in giving up. The most certain way to succeed is always to try just one more time." - Thomas A. Edison
+                    "Progress is impossible without change, and those who cannot change their minds cannot change anything." - George Bernard Shaw
                   </p>
               </div>
             </div>

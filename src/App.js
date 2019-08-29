@@ -19,22 +19,22 @@ class App extends Component {
                 <Route path="/portfolio" component={Portfolio} />
                 <div className="marquee">
             	  <p>
-                    "The difference between ordinary and extraordinary is that little extra." - Jimmy Johnson
-                    "Experience is simply the name we give our mistakes." - Oscar Wilde &middot
-                    "Inaction breeds doubt and fear. Action breeds confidence and courage. If you want to conquer fear, do not sit home and think about it. Go out and get busy." - Dale Carnegie
-                    "Why fit in when you were born to stand out?" - Dr. Seuss
-	            "Always make a total effort, even when the odds are against you." - Arnold Palmer
-                    "There is no small act of kindness. Every compassionate act makes large the world" - Mary Anne Radmacher
-                    "Be thankful for what you have; you'll end up having more. If you concentrate on what you don't have, you will never, ever have enough."
-                    "Enjoy the little things, for one day you may look back and realize they were the big things." - Robert Brault
-                    "Everything is possible. The impossible just takes longer." - Dan Brown
-                    "In times of change, learners inherit the earth, while the learned find themselves beautifully equipped to deal with a world that no longer exists." - Eric Hoffer
-                    "Our greatest weakness lies in giving up. The most certain way to succeed is always to try just one more time." - Thomas A. Edison
-                    "Progress is impossible without change, and those who cannot change their minds cannot change anything." - George Bernard Shaw
-                    "Kindness is as important as knowledge." - Megan Smith
-                    "Until you cross the bridge of your insecurities, you can't begin to explore your possibilities." - Tim Fargo
-                    "All great achievements require time." - Maya Angelou
-                    "Your mind will take the shape of what you frequently hold in thought, for the human spirit is colored by such impressions." - Marcus Aurelius
+                    "The difference between ordinary and extraordinary is that little extra." - Jimmy Johnson;
+                    "Experience is simply the name we give our mistakes." - Oscar Wilde &middot;
+                    "Inaction breeds doubt and fear. Action breeds confidence and courage. If you want to conquer fear, do not sit home and think about it. Go out and get busy." - Dale Carnegie;
+                    "Why fit in when you were born to stand out?" - Dr. Seuss;
+	                "Always make a total effort, even when the odds are against you." - Arnold Palmer;
+                    "There is no small act of kindness. Every compassionate act makes large the world" - Mary Anne Radmacher;
+                    "Be thankful for what you have; you'll end up having more. If you concentrate on what you don't have, you will never, ever have enough.";
+                    "Enjoy the little things, for one day you may look back and realize they were the big things." - Robert Brault;
+                    "Everything is possible. The impossible just takes longer." - Dan Brown;
+                    "In times of change, learners inherit the earth, while the learned find themselves beautifully equipped to deal with a world that no longer exists." - Eric Hoffer;
+                    "Our greatest weakness lies in giving up. The most certain way to succeed is always to try just one more time." - Thomas A. Edison;
+                    "Progress is impossible without change, and those who cannot change their minds cannot change anything." - George Bernard Shaw;
+                    "Kindness is as important as knowledge." - Megan Smith;
+                    "Until you cross the bridge of your insecurities, you can't begin to explore your possibilities." - Tim Fargo;
+                    "All great achievements require time." - Maya Angelou;
+                    "Your mind will take the shape of what you frequently hold in thought, for the human spirit is colored by such impressions." - Marcus Aurelius;
                   </p>
               </div>
             </div>
